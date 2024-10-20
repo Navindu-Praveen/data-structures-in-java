@@ -39,5 +39,13 @@ class StackX{
 		return	stackArray[top--];
 		}
 	}
-	
+	//peek
+	public double peek() {
+		if (isEmpty()) {
+			System.out.println("stack is empty");
+			return -99;
+		}else {
+			return stackArray[top];
+		}
+	}
 }
