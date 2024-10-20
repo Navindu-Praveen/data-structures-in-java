@@ -54,7 +54,12 @@ class StackIm{
 public class StackX{
 	public static void main(String[] args) {
 		
-		StackIm stack1 = new StackIm(5);
+		Scanner scanner1= new Scanner(System.in);
+		
+		System.out.print("Enter the stack Size : ");
+		int stackSize = scanner1.nextInt();
+		
+		StackIm stack1 = new StackIm(stackSize);
 		
 		//push some values to stack
 		stack1.push(10.0);
