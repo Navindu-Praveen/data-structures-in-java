@@ -68,5 +68,15 @@ public class StackX{
 		
 		// Peek the top value without popping
 	    System.out.println("Peek: " +stack1.peek());
+	    //pop
+	    System.out.println("pop " +stack1.pop());
+	 // Peek the top value without popping
+	    System.out.println("Peek: " +stack1.peek());
+	    //pop
+	    System.out.println("pop " +stack1.pop());
+	 // Peek the top value without popping
+	    System.out.println("Peek: " +stack1.peek());
+	    
+	    
 	}	
 }
