@@ -49,6 +49,8 @@ class StackIm{
 			return stackArray[top];
 		}
 	}
+	
+	
 }
 
 public class StackX{
@@ -66,17 +68,29 @@ public class StackX{
 		stack1.push(20.0);
 		stack1.push(30.0);
 		
-		// Peek the top value without popping
-	    System.out.println("Peek: " +stack1.peek());
-	    //pop
-	    System.out.println("pop " +stack1.pop());
-	 // Peek the top value without popping
-	    System.out.println("Peek: " +stack1.peek());
-	    //pop
-	    System.out.println("pop " +stack1.pop());
-	 // Peek the top value without popping
-	    System.out.println("Peek: " +stack1.peek());
+//		// Peek the top value without popping
+//	    System.out.println("Peek: " +stack1.peek());
+//	    //pop
+//	    System.out.println("pop " +stack1.pop());
+//	 // Peek the top value without popping
+//	    System.out.println("Peek: " +stack1.peek());
+//	    //pop
+//	    System.out.println("pop " +stack1.pop());
+//	 // Peek the top value without popping
+//	    System.out.println("Peek: " +stack1.peek());
+//	    
 	    
+//	    //insert items
+//	    System.out.print("Enter Insert Item : ");
+//	    double insertItem = scanner1.nextDouble();
+	    
+	    //pop untill empty and print that values
+	    
+	    while(!stack1.isEmpty()) {
+	    	double value1 = stack1.pop();
+	    	System.out.println("pop value is : "+value1);
+	    	System.out.println("");
+	    }
 	    
 	}	
 }
