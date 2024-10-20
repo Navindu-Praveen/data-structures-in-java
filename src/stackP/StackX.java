@@ -21,5 +21,13 @@ class StackX{
 		return (top==-1);
 	}
 	
+	//push
+	public void push(double j) {
+		if (isFull()) {
+			System.out.println("stack is full...");
+		} else {
+			stackArray[++top]=j;
+		}
+	}
 	
 }
