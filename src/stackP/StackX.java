@@ -1,4 +1,5 @@
 package stackP;
+import java.util.Scanner;
 
 class StackIm{
 	private int top;
