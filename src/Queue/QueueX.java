@@ -35,8 +35,12 @@ class QueueX {
 	//remove
 	public int remove() {
 		if(isEmpty()) {
-			
+			System.out.println("queue is empty");
+			return 99;
 		
+		}else {
+			nItems--;
+			return queueArray[++front];
 		}
 	}
 	
