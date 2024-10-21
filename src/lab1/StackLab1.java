@@ -60,7 +60,10 @@ public class StackLab1{
 		
 		StackLab stklab = new StackLab(10);
 		
-		stklab.push("a");
+		stklab.push('a');
+		
+		
+		System.out.println(stklab.peek());
 		
 		
 		
