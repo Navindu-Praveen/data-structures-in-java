@@ -15,8 +15,30 @@ class QueueX {
 		queueArray=new int[maxSize];
 		nItems=0;
 	}
-	
-	
+	//is queue full
+	public boolean isFull() {
+		return (rear==(maxSize-1));
+	}
+	//is queue empty
+	public boolean isEmpty() {
+		return (rear==-1);
+	}
+	//insert 
+	public void insert(int j) {
+		if(isFull()) {
+			System.out.println("queue is full...");
+		}else {
+		queueArray[++rear]=j;
+		nItems++;
+		}
+	}
+	//remove
+	public int remove() {
+		if(isEmpty()) {
+			
+		
+		}
+	}
 	
 	
 	
