@@ -21,7 +21,7 @@ class QueueX {
 	}
 	//is queue empty
 	public boolean isEmpty() {
-		return (rear==-1);
+		return (rear==0);
 	}
 	//insert 
 	public void insert(int j) {
