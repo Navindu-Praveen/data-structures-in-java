@@ -40,7 +40,7 @@ class QueueX{
 			return -99;
 		}else {
 			nItems--;
-			return queueArray[++front];
+			return queueArray[front++];
 		}
 	}
 	//peek
