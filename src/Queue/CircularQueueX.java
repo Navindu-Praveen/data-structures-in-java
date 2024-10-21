@@ -41,7 +41,7 @@ class  CircularQueueX {
 	}
 	//remove
 	public int remove() {
-		if(nItems==0) {
+		if(isEmpty()) {
 			System.out.println("circuler queue is empty");
 			return -99;
 		}else {
@@ -54,7 +54,14 @@ class  CircularQueueX {
 		}
 	}
 	//peek
-
+	public int peek() {
+		if(isEmpty()) {
+			System.out.println("circuler queue is empty");
+			return -99;
+		}else {
+			return queueArray[front];
+		}
+	}
 	
 //end
 }
