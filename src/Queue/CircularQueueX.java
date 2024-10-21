@@ -31,10 +31,28 @@ class  CircularQueueX {
 		if(isFull()) {
 			System.out.println("circuler queue is full ");
 		}else {
-			
+			//if the queue is not full and have to reassign rear
+			if(rear==(maxSize-1)) {
+				rear=-1;
+			}
+			queueArray[++rear]=j;
+			nItems++;
 		}
 	}
 	//remove
+	public int remove() {
+		if(nItems==0) {
+			System.out.println("circuler queue is empty");
+			return -99;
+		}else {
+			int temp=queueArray[front++];
+			if(front==maxSize) {
+				front=0;
+			}
+			nItems--;
+			return temp;
+		}
+	}
 	//peek
 
 	
