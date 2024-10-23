@@ -8,6 +8,9 @@ class LinkList {
 		first=null;
 	}
 	
+	public boolean isEmpty() { //linkList haven't isFull
+		return (first==null);
+	}
 	
 
 }
