@@ -29,7 +29,7 @@ class LinkedList{
 		newLink.next=first;
 		first = newLink;
 	}
-	public void displayLink() {
+	public void displayList() {
 		Link current = first;
 		
 		while(current != null) {
@@ -37,7 +37,7 @@ class LinkedList{
 			current=current.next;
 		}
 	}
-	public void find(int key) {
+	public boolean find(int key) {
 		Link current = first;
 		
 		while(current!=null) {
@@ -49,19 +49,53 @@ class LinkedList{
 		}
 		return false;
 	}
-	public void insert() {
+	public void insert(int key,int item) {
+		Link current=first;
 		
-	}
-	public void deleteFirst() {
 		
+		while(current!=null) {
+			if(current.iData==key) {
+				Link newLink = new Link(item);
+				newLink.next= current.next;
+				current.next=newLink;
+			}	else {
+				System.out.println("key not found!");
+			}
+		}	
 	}
-//end 
-}
-
+	public int deleteFirst() {
+		Link temp = first;
+		first= first.next;
+		return temp.iData;	
+	}
+	public void delete(int key) {
+		Link previous=first;
+		Link current=first;
+		
+		while(current!=null) {
+			if(current.iData==key) {
+				previous.next=current.next;
+			}else {
+				previous=current;
+				current=current.next;
+				
+			}
+		}
+			
+		}
+	//end 
+	}
 public class LinkX {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		LinkedList list = new LinkedList();
+		
+		list.insertFirst(10);
+		list.insertFirst(20);
+		list.insertFirst(30);
+		
+		list.displayList();
 
 	}
 
