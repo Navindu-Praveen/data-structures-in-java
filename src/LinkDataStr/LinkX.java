@@ -95,6 +95,10 @@ public class LinkX {
 		list.insertFirst(20);
 		list.insertFirst(30);
 		
+		
+		
+//		list.deleteFirst();
+		list.delete(10);
 		list.displayList();
 
 	}
